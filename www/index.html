@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#0b1220">
+<title>SubMeter Bill</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="dark">
+<div id="app">
+  <header id="top">
+    <div><div class="brand">⚡ SubMeter Bill</div><div id="sub" class="muted"></div></div>
+    <button class="icon-btn" data-act="openUpload" aria-label="Upload meter photo">📸</button>
+  </header>
+  <main id="view"></main>
+  <nav id="nav">
+    <button data-act="tab" data-tab="home"><i>🏠</i>Home</button>
+    <button data-act="tab" data-tab="cal"><i>📅</i>Calendar</button>
+    <button data-act="tab" data-tab="hist"><i>📊</i>History</button>
+    <button data-act="tab" data-tab="wa"><i>💬</i>WhatsApp</button>
+    <button data-act="tab" data-tab="set"><i>⚙️</i>Settings</button>
+  </nav>
+</div>
+<div id="sheetWrap" class="hidden"><div id="sheetBack" data-act="closeSheet"></div><div id="sheet"></div></div>
+<div id="toast"></div>
+<input type="file" id="fileIn" accept="image/*" hidden>
+<input type="file" id="restoreIn" accept="application/json,.json" hidden>
+
+<script src="vendor/jspdf.umd.min.js"></script>
+<script src="vendor/tesseract/tesseract.min.js"></script>
+<script src="js/util.js"></script>
+<script src="js/core.js"></script>
+<script src="js/ocr.js"></script>
+<script src="js/reminders.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

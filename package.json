@@ -1,0 +1,26 @@
+{
+  "name": "submeter-bill",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sub-meter electricity billing app (Capacitor, offline-first)",
+  "scripts": {
+    "test": "node tests/core.test.js",
+    "prepare:web": "node scripts/prepare-web.js",
+    "sync": "npm run prepare:web && npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.0",
+    "@capacitor/app": "^6.0.0",
+    "@capacitor/app-launcher": "^6.0.0",
+    "@capacitor/camera": "^6.0.0",
+    "@capacitor/cli": "^6.1.0",
+    "@capacitor/core": "^6.1.0",
+    "@capacitor/filesystem": "^6.0.0",
+    "@capacitor/local-notifications": "^6.0.0",
+    "@capacitor/share": "^6.0.0",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "jspdf": "^2.5.1",
+    "tesseract.js": "5.1.1",
+    "tesseract.js-core": "5.1.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "appId": "com.veerbhadra.submeter",
+  "appName": "SubMeter Bill",
+  "webDir": "www",
+  "backgroundColor": "#0b1220",
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_meter",
+      "iconColor": "#22c55e"
+    }
+  }
+}
